@@ -1,33 +1,69 @@
 <?php
-
-if(isset($_POST['submit'])){
-
-$errors = [];
-
-if(!array_key_exists('nom',$_POST) | $_POST['nom'] == ''){
-    $errors['nom'] = "Vous n'avez pas renseigné votre nom";
-}
-if(!array_key_exists("email",$_POST) | $_POST["email"] == ""){
-    $errors['email'] = "Vous n'avez pas renseigné votre email";
-}
-if(!array_key_exists("message",$_POST) | $_POST['message'] == ''){
-    $errors['message'] = 'oups! vous avez oubliez de remplir le champ "message"';
-}
-
-if(!empty($errors))
+if(isset($_POST['submit']))
 {
-    session_start();
-    $_SESSION['errors'] = $errors;
-} else{
+	if(!empty($_POST['nom']) AND !empty($_POST['email']) AND !empty($_POST['message']))
+	{
+		$header="MIME-Version: 1.0\r\n";
+		$header.='From:"<spostmaster@julien-quentier.fr>'."\n";
+		$header.='Content-Type:text/html; charset="uft-8"'."\n";
+		$header.='Content-Transfer-Encoding: 8bit';
 
-$message = $_POST['message'];
-$sujet = $_POST['subject'];
-$headers= 'FROM : '.$_POST['nom'];
+		$message='
+		<html>
+			<body>
+				<div align="center">
+					<br />
+					<u>Nom de l\'expéditeur :</u>'.$_POST['nom'].'<br />
+                    <u>Mail de l\'expéditeur :</u>'.$_POST['email'].'<br />
+                    <br />
+                    <u>Mail de l\'expéditeur :</u>'.$_POST['subject'].'<br />
+                    <br />
+                    <u>Mail de l\'expéditeur :</u>'.$_POST['email'].'<br />
+					<br />
+					'.nl2br($_POST['message']).'
+					<br />
+				</div>
+			</body>
+		</html>
+		';
 
-mail('contact@julien-quentier.fr',$sujet,$message,$headers);
-
-}
-    
+		mail("contact@julien-quentier.fr", $message, $header);
+        $msg='
+        <div id="toats" class="notif">
+            <div class="toats_header">
+                <a class="toats_die">
+                    <i class="icon ion-md-close"></i>
+                </a>
+                <h5>Notification :</h5>
+            </div>
+            <div class="toats_core">
+                <p>
+                Votre message a bien été envoyé !
+                </p>
+            </div>
+            
+        </div>
+        ';
+	}
+	else
+	{
+        $msg='
+        <div id="toats" class="notif">
+            <div class="toats_header">
+                <a class="toats_die">
+                    <i class="icon ion-md-close"></i>
+                </a>
+                <h5>Notification :</h5>
+            </div>
+            <div class="toats_core">
+                <p>
+                Tous les champs doivent être complétés !
+                </p>
+            </div>
+            
+        </div>
+        ';
+	}
 }
 
 ;?>
@@ -547,22 +583,12 @@ réalisation d’objectifs, remise à niveaux du magasin. Management d’équipe
             <span class="ligne" ></span>       
         </div>
 
-        <?php if(array_key_exists("errors", $_SESSION)): ;?>
-        <div id="toats" class="notif">
-            <div class="toats_header">
-                <a class="toats_die">
-                    <i class="icon ion-md-close"></i>
-                </a>
-                <h5>Notification :</h5>
-            </div>
-            <div class="toats_core">
-                <p>
-                <?= implode("<br>",$_SESSION["errors"]);?>
-                </p>
-            </div>
-            
-        </div>
-        <?php unset($_SESSION["errors"]);endif;?>
+        <?php
+		if(isset($msg))
+		{
+			echo $msg;
+		}
+		?>
 
     <div class="row">
 

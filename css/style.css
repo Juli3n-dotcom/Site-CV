@@ -812,6 +812,10 @@ padding-left:10px;
      text-decoration: none;
      font-size: 0.5rem;
  }
+ #toats .toats_core p{
+     font-size: 1rem;
+     font-family: var(--roboto);
+ }
  #toats.hiden{
      visibility: hidden;
  }
