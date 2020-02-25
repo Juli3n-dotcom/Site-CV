@@ -1,4 +1,4 @@
-
+var d = new Date("2020-02-25T22:23:25z");
 // const nav = document.querySelector('.header');
 // const mouse = document.querySelector('.mouse');
 
@@ -166,6 +166,9 @@ sr.reveal('.right',{
  const hamb_btn = document.querySelector('.open i');
  const toTopBtn = document.querySelector('.btn_go_to_top a')
 
+const toats = document.querySelector('.notif');
+const close_toats = document.querySelector('.toats_die');
+
 
 window.addEventListener('scroll', () =>{
   if(window.scrollY > 100){
@@ -199,10 +202,11 @@ window.addEventListener('scroll', () =>{
 });
 
 
-
-const toats = document.querySelector('.notif');
-const close_toats = document.querySelector('.toats_die');
-
 close_toats.addEventListener('click', ()=>{
   toats.classList.add('hiden');
 });
+
+
+
+
+ 

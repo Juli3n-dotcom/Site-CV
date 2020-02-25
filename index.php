@@ -3,33 +3,25 @@ if(isset($_POST['submit']))
 {
 	if(!empty($_POST['nom']) AND !empty($_POST['email']) AND !empty($_POST['message']))
 	{
-		$header="MIME-Version: 1.0\r\n";
-		$header.='From:"<spostmaster@julien-quentier.fr>'."\n";
-		$header.='Content-Type:text/html; charset="uft-8"'."\n";
-		$header.='Content-Transfer-Encoding: 8bit';
+		
+		$header='From:<postmaster@julien-quentier.fr>'."\n";
+		
 
 		$message='
-		<html>
-			<body>
-				<div align="center">
-					<br />
-					<u>Nom de l\'expéditeur :</u>'.$_POST['nom'].'<br />
-                    <u>Mail de l\'expéditeur :</u>'.$_POST['email'].'<br />
-                    <br />
-                    <u>Mail de l\'expéditeur :</u>'.$_POST['subject'].'<br />
-                    <br />
-                    <u>Mail de l\'expéditeur :</u>'.$_POST['email'].'<br />
-					<br />
-					'.nl2br($_POST['message']).'
-					<br />
-				</div>
-			</body>
-		</html>
-		';
+    Nom de l\'expéditeur : '.$_POST['nom'].'
+                
+    Mail de l\'expéditeur : '.$_POST['email'].'
+        
+    Objet du message : '.$_POST['subject'].'
+                    
+    Message :
+    '.nl2br($_POST['message']).'	
 
-		mail("contact@julien-quentier.fr", $message, $header);
+		        ';
+
+		mail("contact@julien-quentier.fr", $header, $message);
         $msg='
-        <div id="toats" class="notif">
+        <div id="toats" class="notif" onload="killToats()">
             <div class="toats_header">
                 <a class="toats_die">
                     <i class="icon ion-md-close"></i>
@@ -43,12 +35,13 @@ if(isset($_POST['submit']))
             </div>
             
         </div>
+        
         ';
 	}
 	else
 	{
         $msg='
-        <div id="toats" class="notif">
+        <div id="toats" class="notif" onload="killToats()">
             <div class="toats_header">
                 <a class="toats_die">
                     <i class="icon ion-md-close"></i>
@@ -62,6 +55,7 @@ if(isset($_POST['submit']))
             </div>
             
         </div>
+        
         ';
 	}
 }
@@ -589,12 +583,14 @@ réalisation d’objectifs, remise à niveaux du magasin. Management d’équipe
 			echo $msg;
 		}
 		?>
-
+        <script>
+        setTimeout(function(){ document.querySelector(".notif").classList.add("hiden");}, 3000 );
+        </script>
     <div class="row">
 
     
         <div class="col-md-6 col-sm-6 contact_form" >
-        <form action="index.php#contact" method="POST">
+        <form  method="POST">
             <aside>
             <label for="nom">Nom:</label>
             <input type="text" name="nom" id="nom" placeholder="Votre nom" value="<?php if(isset($_POST["nom"])) { echo $_POST["nom"]; } ?>">
@@ -611,7 +607,7 @@ réalisation d’objectifs, remise à niveaux du magasin. Management d’équipe
             <label for="message">Message:</label>
             <textarea type="text" name="message" id="message" placeholder="Votre message" value="<?php if(isset($_POST["message"])) { echo $_POST["message"]; } ?>"></textarea>
             </aside>
-            <input type="submit" value="Envoyer !" name="submit" id="submit">
+            <input type="submit" value="Envoyer !" name="submit" id="submit" onclick="newBool()">
         </form>
 
         
