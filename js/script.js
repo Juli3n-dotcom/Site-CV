@@ -25,8 +25,10 @@ $('.nav-obj a').on('click', function(e){
     $('html, body').animate({
       scrollTop : $(hash).offset().top
     }, 600);
+    $('.nav-liste').removeClass('active');
   }
 });
+
 
 $('.nav-band a').on('click', function(e){
   if(this.hash !== ''){ 

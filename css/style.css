@@ -26,9 +26,9 @@ html{
     font-size: 10px;
     box-sizing: border-box  ;
 }
-/* body{
-    overflow: hidden;
-} */
+body{
+    
+}
 
 a{
     text-decoration: none;
@@ -46,6 +46,7 @@ img{
 }
 section{
     padding: 5rem 0;
+    /* width: 100vh; */
 
 }
 
@@ -131,7 +132,7 @@ color: var(--light-black);
     background-color: var(--marine-blue);
     position: fixed;
     top: 0;
-    right: -26rem;
+    right: -30rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,6 +157,11 @@ color: var(--light-black);
     text-transform: uppercase;
     color: var(--light-white);
     font-family: var(--roboto);
+    text-decoration: none;
+}
+.nav-lien:hover{
+    text-decoration: none;
+    color: var(--light-white);
 }
 .nav_item_name{
     color: var(--white-fa);
@@ -178,7 +184,7 @@ color: var(--light-black);
 .main-message{
     width: 100%;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 0;
     /* max-width: 50rem; */
     text-transform: uppercase;
@@ -222,7 +228,7 @@ color: var(--light-black);
 
 .icon-scroll {
     position: absolute;
-    top: 75%;
+    top: 85%;
     left: 50%;
     width: 1em;
     height: 3.125em;
@@ -474,16 +480,25 @@ color: var(--light-black);
     margin: 2rem 0;
 }
 .dev{
-    background: url('../images/earth-3866609_1920.jpg') left no-repeat;
-    background-attachment: fixed;
+    background: url('../images/earth-3866609_1920.jpg');
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: left;
+    background-repeat: no-repeat;
 }
 .maintenance{
-    background: url('../images/earth-3866609_1920.jpg') center no-repeat;
-    background-attachment: fixed;
+    background: url('../images/earth-3866609_1920.jpg');
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .seo{
-    background: url('../images/earth-3866609_1920.jpg') right no-repeat;
-    background-attachment: fixed;
+    background: url('../images/earth-3866609_1920.jpg');
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 /* **** Portfolio **** */
@@ -892,7 +907,13 @@ footer .btn_go_to_top a {
     }
   }
 @media (min-width: 575.98px) {
-    
+    .icon-scroll {  
+        top: 75%;   
+    }
+    .main-message{
+        top: 20%;
+        left: 0;
+    }
 }
 
 
