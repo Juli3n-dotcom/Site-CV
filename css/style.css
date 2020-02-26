@@ -26,9 +26,6 @@ html{
     font-size: 10px;
     box-sizing: border-box  ;
 }
-body{
-    
-}
 
 a{
     text-decoration: none;
@@ -228,7 +225,7 @@ color: var(--light-black);
 
 .icon-scroll {
     position: absolute;
-    top: 85%;
+    top: 75%;
     left: 50%;
     width: 1em;
     height: 3.125em;

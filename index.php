@@ -291,7 +291,7 @@ des charges, et surtout a votre image .
                 <i class="fas fa-cogs"></i>
                 <h3>Maintenance</h3>
                     <p>
-Parce que les technilogies évoluent, Je peux réaliser la maitenance de votre plateforme web, 
+Parce que les technologies évoluent, je peux réaliser la maitenance de votre plateforme web, 
 Pour toujour assurer le bon fonctionnement de votre site.
                     </p>
             </div>
@@ -300,9 +300,9 @@ Pour toujour assurer le bon fonctionnement de votre site.
                 <i class="fab fa-google"></i>
                 <h3>Référencement</h3>
                     <p>
-"Google est votre amis!", et parce que le référencement naturel (SEO), fera le succès de votre projet, 
-Je travail sur la création, la structure et l'optimisation de vos contenus. ainsi que l'analyse de votre trafic, 
-pour vous aider a étre visible sur internet.
+"Google est votre ami!", et parce que le référencement naturel (SEO) fera le succès de votre projet, 
+je travail sur la création, la structure, et l'optimisation de vos contenus, ainsi que l'analyse de votre trafic; 
+pour vous aider à étre visible sur internet.
                     </p>
                 </div>
             </div>
