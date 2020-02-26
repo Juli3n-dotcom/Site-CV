@@ -181,7 +181,7 @@ color: var(--light-black);
 .main-message{
     width: 100%;
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 0;
     /* max-width: 50rem; */
     text-transform: uppercase;
@@ -899,6 +899,10 @@ footer .btn_go_to_top a {
 /* **** Responsive **** */
 
 @media(min-width:568px){
+    .main-message{
+        top: 20%;
+        left: 0;
+    }
     .block-icon{
         left: 30%;
     }

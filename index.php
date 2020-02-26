@@ -185,7 +185,7 @@ reconvertis en développeur, intégrateur web et je me passionne pour le dévelo
 Je garde aussi un intérêt à développer des applications back-end.
 <br>
 <br>
-Je cherche a associer le design et la technologie, ainsi, mes 5 années chez Apple m'ont permis a étre minitieux dans mon travail, 
+Je cherche a associer le design et la technologie, ainsi, mes 5 années chez Apple m'ont permis a étre minutieux dans mon travail, 
 et de toujour chercher a me dépasser pour tirer le meilleur de mes expériences.
 Je continue aujourd'hui d'appliquer mes connaissances pour créer des sites internet ainsi que des applications web attractifs.
 <br>
@@ -291,7 +291,7 @@ des charges, et surtout a votre image .
                 <i class="fas fa-cogs"></i>
                 <h3>Maintenance</h3>
                     <p>
-Parce que les technologies évoluent, je peux réaliser la maitenance de votre plateforme web, 
+Parce que les technologies évoluent, je peux réaliser la maintenance de votre plateforme web, 
 Pour toujour assurer le bon fonctionnement de votre site.
                     </p>
             </div>
@@ -301,7 +301,7 @@ Pour toujour assurer le bon fonctionnement de votre site.
                 <h3>Référencement</h3>
                     <p>
 "Google est votre ami!", et parce que le référencement naturel (SEO) fera le succès de votre projet, 
-je travail sur la création, la structure, et l'optimisation de vos contenus, ainsi que l'analyse de votre trafic; 
+je travaille sur la création, la structure, et l'optimisation de vos contenus, ainsi que l'analyse de votre trafic; 
 pour vous aider à étre visible sur internet.
                     </p>
                 </div>
