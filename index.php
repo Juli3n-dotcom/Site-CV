@@ -413,22 +413,15 @@ Les produits de la boutique sont : t-shirts, casquette, bonnet, veste, manteau, 
       <div class="modal-body">
       <p>
             <strong>Sujet:</strong> 
-Création d’un site web e-Commerce HTML/CSS/JAVASCRIPT
+Création d’un site web de petites annonces, utilsant PHP/MySQL et AJAX
         </p>
             
         <p>
             <strong>Objectif:</strong>
-Concevoir des pages web à l’aide des langages HTML5/CSS3 en respectant les normes W3C.
-Créer un site web responsive design et compatible sur chaque écran/navigateurs.
-Ajouter de l’interactivité avec JAVASCRIPT
-Mettre en ligne un site web professionnel
+Concevoir un site de petites annonces mettant principalement en avant nos compétences back-end.
         </p>
                     
-        <p>
-            <strong>Présentation:</strong>
-Le site LePetitCommerce est une boutique eCommerce spécialisée dans le textile et venant de s'implanter à Paris il y a un mois.
-Les produits de la boutique sont : t-shirts, casquette, bonnet, veste, manteau, pull, jean, chaussure, robes, lunette, montre, ceinture, sac, ...
-        </p>
+        
       </div>
       <div class="">
       <a href="http://swap.julien-quentier.fr" class="modal_btn">Voir le Site</a>
@@ -441,7 +434,7 @@ Les produits de la boutique sont : t-shirts, casquette, bonnet, veste, manteau, 
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="custom_modal">
       <div class="modal-header">
-        <h3 class="modal-title" id="exampleModalScrollableTitle">Domostore<span class="badge badge-secondary">en Cours...</span></h3>
+        <h3 class="modal-title" id="exampleModalScrollableTitle">Domostore <span class="badge badge-secondary">en Cours...</span></h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -449,21 +442,19 @@ Les produits de la boutique sont : t-shirts, casquette, bonnet, veste, manteau, 
       <div class="modal-body">
       <p>
             <strong>Sujet:</strong> 
-Création d’un site web e-Commerce HTML/CSS/JAVASCRIPT
+Création d’un site web e-commerce avce wordpress et woocommerce
         </p>
             
         <p>
             <strong>Objectif:</strong>
-Concevoir des pages web à l’aide des langages HTML5/CSS3 en respectant les normes W3C.
-Créer un site web responsive design et compatible sur chaque écran/navigateurs.
-Ajouter de l’interactivité avec JAVASCRIPT
-Mettre en ligne un site web professionnel
+Nous devions créer un site internet e-commerce avec soit la posibilté de créer un thème "from sratch"
+soit en modifiant un existant, mais des modifications qui soient visinles.
         </p>
                     
         <p>
             <strong>Présentation:</strong>
-Le site LePetitCommerce est une boutique eCommerce spécialisée dans le textile et venant de s'implanter à Paris il y a un mois.
-Les produits de la boutique sont : t-shirts, casquette, bonnet, veste, manteau, pull, jean, chaussure, robes, lunette, montre, ceinture, sac, ...
+Pour ce porjet, j'ai créer mon propre thème wordpress "DM_Store", celà m'a permis de créer un site
+avec mes critéres, et avec une interface plus intéractive.
         </p>
       </div>
       <div class="">

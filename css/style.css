@@ -192,15 +192,16 @@ color: var(--light-black);
     font-size: 1.6rem;
     text-transform: lowercase;
     text-align: center;
-    font-family: var(--oxygen);
-    
+    font-family: var(--oxygen);   
 }
 .main-message h1{
     font-family: var(--shadow);
     font-size: 4rem;
     margin: 1rem 0;
-    text-align: center;
-   
+    text-align: center;   
+}
+.main-message .ligne{
+    margin: 10px auto !important;
 }
 
 .btn{
@@ -593,6 +594,7 @@ color: var(--light-black);
    font-size: 2.5rem;
    color: var(--light-black);
 }
+
 .modal_btn{
     margin: 4rem;
 }
