@@ -328,33 +328,22 @@ pour vous aider à étre visible sur internet.
                     <p class="cart-text">
 Site e-commerce uniquement front-end réalisé durant ma période de formation
                     </p>
-                    <button type="button" class="modal_btn modal_btn1" data-toggle="modal" data-target="#lepetitcommerce">En savoir plus</button>
+                    <a href="http://lepetitcommerce.julien-quentier.fr" class="modal_btn">Voir le Site</a>
                 </div>
                 </div>
             </div><!-- fin portfolio-item 1 -->
 
-            <div class="portfolio-grid-item">
-                <div class="cart">
-                    <img src="images/swap.png" class="cart-img-top" alt="image_site">
-                <div class="cart-body">
-                    <h3 class="portfolio_card_title">SWAP</h3>
-                    <p class="cart-text">
-Site de petites annonces back-end réalisé durant ma période de formation
-                    </p>
-                    <button type="button" class="modal_btn modal_btn1" data-toggle="modal" data-target="#swap">En savoir plus</button>
-                </div>
-                </div>
-            </div><!-- fin portfolio-item 2 -->
+            
 
             <div class="portfolio-grid-item">
                 <div class="cart">
                     <img src="images/domostore.png" class="card-img-top" alt="...">
                 <div class="cart-body">
-                    <h3 class="portfolio_card_title">Domostore <span class="badge badge-secondary">en cours..</span></h3>
+                    <h3 class="portfolio_card_title">Domostore</h3>
                     <p class="cart-text">
 Site e-commerce Wordpress avec Woocommerce, projet réalisé pour la soutenance de ma formation
                     </p>
-                    <button type="button" class="modal_btn modal_btn1 disabled" data-toggle="modal" data-target="#domostore">En savoir plus</button>
+                    <a href="http://domostore.julien-quentier.fr" class="modal_btn">Voir le Site</a>
                 </div>
                 </div>
             </div><!-- fin portfolio-item 3 -->
@@ -362,107 +351,7 @@ Site e-commerce Wordpress avec Woocommerce, projet réalisé pour la soutenance 
     </div>
 </section>
 
-<!-- **** Modal Portfolio **** -->  
 
-    <!-- ****  Modal item-1 **** --> 
-<div class="modal fade" id="lepetitcommerce" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="custom_modal">
-      <div class="modal-header">
-        <h3 class="modal-title" id="exampleModalScrollableTitle">Le Petit Commerce</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      <p>
-            <strong>Sujet:</strong> 
-Création d’un site web e-Commerce HTML/CSS/JAVASCRIPT
-        </p>
-            
-        <p>
-            <strong>Objectif:</strong>
-Concevoir des pages web à l’aide des langages HTML5/CSS3 en respectant les normes W3C.
-Créer un site web responsive design et compatible sur chaque écran/navigateurs.
-Ajouter de l’interactivité avec JAVASCRIPT
-Mettre en ligne un site web professionnel
-        </p>
-                    
-        <p>
-            <strong>Présentation:</strong>
-Le site LePetitCommerce est une boutique eCommerce spécialisée dans le textile et venant de s'implanter à Paris il y a un mois.
-Les produits de la boutique sont : t-shirts, casquette, bonnet, veste, manteau, pull, jean, chaussure, robes, lunette, montre, ceinture, sac, ...
-        </p>
-      </div>
-      <div class="">
-      <a href="http://lepetitcommerce.julien-quentier.fr" class="modal_btn">Voir le Site</a>
-      </div>
-    </div>
-  </div>
-</div><!-- **** fin Modal item-1 **** --> 
-
-<div class="modal fade" id="swap" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="custom_modal">
-      <div class="modal-header">
-        <h3 class="modal-title" id="exampleModalScrollableTitle">SWAP</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      <p>
-            <strong>Sujet:</strong> 
-Création d’un site web de petites annonces, utilsant PHP/MySQL et AJAX
-        </p>
-            
-        <p>
-            <strong>Objectif:</strong>
-Concevoir un site de petites annonces mettant principalement en avant nos compétences back-end.
-        </p>
-                    
-        
-      </div>
-      <div class="">
-      <a href="http://swap.julien-quentier.fr" class="modal_btn">Voir le Site</a>
-      </div>
-    </div>
-  </div>
-</div><!-- **** fin Modal item-2 **** -->
-
-<div class="modal fade" id="domostore" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="custom_modal">
-      <div class="modal-header">
-        <h3 class="modal-title" id="exampleModalScrollableTitle">Domostore <span class="badge badge-secondary">en Cours...</span></h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      <p>
-            <strong>Sujet:</strong> 
-Création d’un site web e-commerce avce wordpress et woocommerce
-        </p>
-            
-        <p>
-            <strong>Objectif:</strong>
-Nous devions créer un site internet e-commerce avec soit la posibilté de créer un thème "from sratch"
-soit en modifiant un existant, mais des modifications qui soient visinles.
-        </p>
-                    
-        <p>
-            <strong>Présentation:</strong>
-Pour ce porjet, j'ai créer mon propre thème wordpress "DM_Store", celà m'a permis de créer un site
-avec mes critéres, et avec une interface plus intéractive.
-        </p>
-      </div>
-      <div class="">
-      <a href="http://domostore.julien-quentier.fr" class="modal_btn">Voir le Site</a>
-      </div>
-    </div>
-  </div>
-</div><!-- **** fin Modal item-3 **** --> 
 
 <!-- **** Expériences **** -->
 
