@@ -83,6 +83,7 @@ if(isset($_POST['submit']))
     <meta name="robots" content="index,follow,all">
     <meta name="author" content="Julien Quentier">
     <link rel="icon" href="images/icon.png">
+    <link rel="apple-touch-icon" href="images/icon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -337,13 +338,26 @@ Site e-commerce uniquement front-end réalisé durant ma période de formation
 
             <div class="portfolio-grid-item">
                 <div class="cart">
-                    <img src="images/domostore.png" class="card-img-top" alt="...">
+                    <img src="images/domostore.png" class="card-img-top" alt="img_site">
                 <div class="cart-body">
                     <h3 class="portfolio_card_title">Domostore</h3>
                     <p class="cart-text">
 Site e-commerce Wordpress avec Woocommerce, projet réalisé pour la soutenance de ma formation
                     </p>
-                    <a href="http://domostore.julien-quentier.fr" class="modal_btn">Voir le Site</a>
+                    <a href="https://domostore.julien-quentier.fr" class="modal_btn">Voir le Site</a>
+                </div>
+                </div>
+            </div><!-- fin portfolio-item 2 -->
+
+            <div class="portfolio-grid-item">
+                <div class="cart">
+                    <img src="images/vandreams.png" class="card-img-top" alt="img_site">
+                <div class="cart-body">
+                    <h3 class="portfolio_card_title">Vandreams.fr</h3>
+                    <p class="cart-text">
+Site de petites annonces spécialisé dans les vans aménagés d'occasions.
+                    </p>
+                    <a href="https://www.vandreams.fr" class="modal_btn">Voir le Site</a>
                 </div>
                 </div>
             </div><!-- fin portfolio-item 3 -->
