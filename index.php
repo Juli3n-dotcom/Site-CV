@@ -1,66 +1,3 @@
-<?php
-if(isset($_POST['submit']))
-{
-	if(!empty($_POST['nom']) AND !empty($_POST['email']) AND !empty($_POST['message']))
-	{
-		
-		$header='From:<postmaster@julien-quentier.fr>'."\n";
-		
-
-		$message='
-    Nom de l\'expéditeur : '.$_POST['nom'].'
-                
-    Mail de l\'expéditeur : '.$_POST['email'].'
-        
-    Objet du message : '.$_POST['subject'].'
-                    
-    Message :
-    '.nl2br($_POST['message']).'	
-
-		        ';
-
-		mail("contact@julien-quentier.fr", $header, $message);
-        $msg='
-        <div id="toats" class="notif" onload="killToats()">
-            <div class="toats_header">
-                <a class="toats_die">
-                    <i class="icon ion-md-close"></i>
-                </a>
-                <h5>Notification :</h5>
-            </div>
-            <div class="toats_core">
-                <p>
-                Votre message a bien été envoyé !
-                </p>
-            </div>
-            
-        </div>
-        
-        ';
-	}
-	else
-	{
-        $msg='
-        <div id="toats" class="notif" onload="killToats()">
-            <div class="toats_header">
-                <a class="toats_die">
-                    <i class="icon ion-md-close"></i>
-                </a>
-                <h5>Notification :</h5>
-            </div>
-            <div class="toats_core">
-                <p>
-                Tous les champs doivent être complétés !
-                </p>
-            </div>
-            
-        </div>
-        
-        ';
-	}
-}
-
-;?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -82,11 +19,11 @@ if(isset($_POST['submit']))
     <meta name="Keywords" content="Julien Quentier, développeur, développeur web, web, CV, site CV, site, application, application web, html5, css3, jquery, php, ecommerce, wordpress">
     <meta name="robots" content="index,follow,all">
     <meta name="author" content="Julien Quentier">
-    <link rel="icon" href="images/icon.png">
+    <link rel="icon" href="assets/images/icon.png">
     <link rel="apple-touch-icon" href="images/icon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
@@ -174,7 +111,7 @@ if(isset($_POST['submit']))
         <div class="a_propos-grid">
             <div class="a_propos-grid-item a_propos_img">
                 <p>
-                <img  class="photo_profil" src="images/logo.png" alt="">
+                <img  class="photo_profil" src="assets/images/logo.png" alt="">
                 </p>
         </div>
 
@@ -222,6 +159,7 @@ Vous trouverez sur mon site quelques projets réalisés durant mes études ou du
                             <li>JavaScript</li>
                             <li>JQuery</li>
                             <li>Bootstrap</li>
+                            <li>Notion VueJs</li>
                         </ul>
             </div>
 
@@ -323,7 +261,7 @@ pour vous aider à étre visible sur internet.
         <div class="portfolio-grid">
             <div class="portfolio-grid-item">
                 <div class="cart">
-                    <img src="images/lepetitcommerce.png" class="cart-img-top" alt="image_site">
+                    <img src="assets/images/lepetitcommerce.png" class="cart-img-top" alt="image_site">
                 <div class="cart-body">
                     <h3 class="portfolio_card_title">Le Petit Commerce</h3>
                     <p class="cart-text">
@@ -338,7 +276,7 @@ Site e-commerce uniquement front-end réalisé durant ma période de formation
 
             <div class="portfolio-grid-item">
                 <div class="cart">
-                    <img src="images/domostore.png" class="card-img-top" alt="img_site">
+                    <img src="assets/images/domostore.png" class="card-img-top" alt="img_site">
                 <div class="cart-body">
                     <h3 class="portfolio_card_title">Domostore</h3>
                     <p class="cart-text">
@@ -351,7 +289,7 @@ Site e-commerce Wordpress avec Woocommerce, projet réalisé pour la soutenance 
 
             <div class="portfolio-grid-item">
                 <div class="cart">
-                    <img src="images/vandreams.png" class="card-img-top" alt="img_site">
+                    <img src="assets/images/vandreams.png" class="card-img-top" alt="img_site">
                 <div class="cart-body">
                     <h3 class="portfolio_card_title">Vandreams.fr</h3>
                     <p class="cart-text">
@@ -361,6 +299,31 @@ Site de petites annonces spécialisé dans les vans aménagés d'occasions.
                 </div>
                 </div>
             </div><!-- fin portfolio-item 3 -->
+
+            <div class="portfolio-grid-item">
+                <div class="cart">
+                    <img src="assets/images/coeurscelestes.png" class="card-img-top" alt="img_site">
+                <div class="cart-body">
+                    <h3 class="portfolio_card_title">coeurscelestes.com</h3>
+                    <p class="cart-text">
+Site Worpress, espace de reconnexion à soi.
+                    </p>
+                    <a href="http://www.coeurscelestes.com/" class="modal_btn">Voir le Site</a>
+                </div>
+                </div>
+            </div><!-- fin portfolio-item 4 -->
+            <div class="portfolio-grid-item">
+                <div class="cart">
+                    <img src="assets/images/travel.png" class="card-img-top" alt="img_site">
+                <div class="cart-body">
+                    <h3 class="portfolio_card_title">Travel Agency</h3>
+                    <p class="cart-text">
+Site Vitrine de démonstration
+                    </p>
+                    <a href="http://www.coeurscelestes.com/" class="modal_btn">Voir le Site</a>
+                </div>
+                </div>
+            </div><!-- fin portfolio-item 4 -->
         </div> <!-- fin portfolio-GRID -->
     </div>
 </section>
@@ -379,6 +342,18 @@ Site de petites annonces spécialisé dans les vans aménagés d'occasions.
 
     <div class="timeline">
         <ul>
+        <li>
+                <div class="content right">
+                    <h3>Développeur web Freelance</h3>
+                    <p>
+Création de site sur commande, pour des clients professionnels, sites e-commerce,
+sites vitrines, conseils SEO,...
+                    </p>
+                </div>
+                <div class="time actual left">
+                    <h4>Depuis Juin 2020</h4>
+                </div>
+            </li>
             <li>
                 <div class="content left">
                     <h3>ILEOTECH</h3>
@@ -450,7 +425,7 @@ réalisation d’objectifs, remise à niveaux du magasin. Management d’équipe
     <div class="t_section experience_plus container">
         <h3>En savoir plus</h3>
             <div class=" experience_other">
-                <a href="file/CV_Julien_QUENTIER.pdf" target="_blank"><i class="fas fa-cloud-download-alt"></i> Télécharger mon cv</a>
+                <a href="assets/file/CV_Julien_QUENTIER.pdf" target="_blank"><i class="fas fa-cloud-download-alt"></i> Télécharger mon cv</a>
             </div>
             
         </div>
@@ -471,15 +446,7 @@ réalisation d’objectifs, remise à niveaux du magasin. Management d’équipe
             <span class="ligne" ></span>       
         </div>
 
-        <?php
-		if(isset($msg))
-		{
-			echo $msg;
-		}
-		?>
-        <script>
-        setTimeout(function(){ document.querySelector(".notif").classList.add("hiden");}, 3000 );
-        </script>
+        <div id="resultat"></div>
     <div class="row">
 
     
@@ -501,7 +468,7 @@ réalisation d’objectifs, remise à niveaux du magasin. Management d’équipe
             <label for="message">Message:</label>
             <textarea type="text" name="message" id="message" placeholder="Votre message" value="<?php if(isset($_POST["message"])) { echo $_POST["message"]; } ?>"></textarea>
             </aside>
-            <input type="submit" value="Envoyer !" name="submit" id="submit" onclick="newBool()">
+            <input type="submit" value="Envoyer !" name="submit" id="submit">
         </form>
 
         
@@ -579,9 +546,11 @@ réalisation d’objectifs, remise à niveaux du magasin. Management d’équipe
     </footer>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="js/script.js"></script>
-   <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.min.js"></script> 
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/ajax.js"></script>
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script> 
+    
 
 </body>
 </html>

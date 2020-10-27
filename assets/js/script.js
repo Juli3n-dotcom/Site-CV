@@ -168,9 +168,6 @@ sr.reveal('.right',{
  const hamb_btn = document.querySelector('.open i');
  const toTopBtn = document.querySelector('.btn_go_to_top a')
 
-const toats = document.querySelector('.notif');
-const close_toats = document.querySelector('.toats_die');
-
 
 window.addEventListener('scroll', () =>{
   if(window.scrollY > 100){
@@ -204,9 +201,6 @@ window.addEventListener('scroll', () =>{
 });
 
 
-close_toats.addEventListener('click', ()=>{
-  toats.classList.add('hiden');
-});
 
 
 

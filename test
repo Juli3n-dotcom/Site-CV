@@ -1,0 +1,74 @@
+<?php
+if(isset($_POST['submit']))
+{
+	if(!empty($_POST['nom']) AND !empty($_POST['email']) AND !empty($_POST['message']))
+	{
+		
+		$header='From:<postmaster@julien-quentier.fr>'."\n";
+		
+
+		$message='
+    Nom de l\'expéditeur : '.$_POST['nom'].'
+                
+    Mail de l\'expéditeur : '.$_POST['email'].'
+        
+    Objet du message : '.$_POST['subject'].'
+                    
+    Message :
+    '.nl2br($_POST['message']).'	
+
+		        ';
+
+		mail("contact@julien-quentier.fr", $header, $message);
+        $msg='
+        <div id="toats" class="notif" onload="killToats()">
+            <div class="toats_header">
+                <a class="toats_die">
+                    <i class="icon ion-md-close"></i>
+                </a>
+                <h5>Notification :</h5>
+            </div>
+            <div class="toats_core">
+                <p>
+                Votre message a bien été envoyé !
+                </p>
+            </div>
+            
+        </div>
+        
+        ';
+	}
+	else
+	{
+        $msg='
+        <div id="toats" class="notif" onload="killToats()">
+            <div class="toats_header">
+                <a class="toats_die">
+                    <i class="icon ion-md-close"></i>
+                </a>
+                <h5>Notification :</h5>
+            </div>
+            <div class="toats_core">
+                <p>
+                Tous les champs doivent être complétés !
+                </p>
+            </div>
+            
+        </div>
+        
+        ';
+	}
+}
+
+;?>
+
+
+<?php
+		if(isset($msg))
+		{
+			echo $msg;
+		}
+		?>
+        <script>
+        setTimeout(function(){ document.querySelector(".notif").classList.add("hiden");}, 3000 );
+        </script>
