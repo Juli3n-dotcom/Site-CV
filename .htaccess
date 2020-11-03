@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteRule ^welcome$ index.php
+RewriteRule ^oups$ 404.html
+
+ErrorDocument 404 /julien-quentier/oups
