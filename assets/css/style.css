@@ -513,7 +513,6 @@ nav {
 }
 
 .portfolio-grid-item {
-  height: 50rem;
   text-align: center;
   color: var(--light-black);
   position: relative;

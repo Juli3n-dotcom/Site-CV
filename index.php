@@ -323,7 +323,19 @@ Site Vitrine de démonstration
                     <a href="https://travel.julien-quentier.fr/" class="modal_btn">Voir le Site</a>
                 </div>
                 </div>
-            </div><!-- fin portfolio-item 4 -->
+            </div><!-- fin portfolio-item 5 -->
+            <div class="portfolio-grid-item">
+                <div class="cart">
+                    <img src="assets/images/bakery.png" class="card-img-top" alt="img_site">
+                <div class="cart-body">
+                    <h3 class="portfolio_card_title">Au bon pain</h3>
+                    <p class="cart-text">
+Site Vitrine de démonstration
+                    </p>
+                    <a href="https://bakery.julien-quentier.fr/" class="modal_btn">Voir le Site</a>
+                </div>
+                </div>
+            </div><!-- fin portfolio-item 6 -->
         </div> <!-- fin portfolio-GRID -->
     </div>
 </section>
